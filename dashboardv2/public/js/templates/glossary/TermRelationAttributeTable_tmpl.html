@@ -20,7 +20,7 @@
             <th>{{#if relationTypeTable}}Relation Types{{else}}Term{{/if}}</th>
             <th>{{#if relationTypeTable}}Related Terms{{else}}Attribute{{/if}}</th>
             {{#if relationTypeTable}}
-            <th>Attributes</th>{{/if}}
+            <th>属性</th>{{/if}}
         </tr>
     </thead>
     <tbody>
@@ -37,8 +37,8 @@
                     <table class="attriTable">
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Value</th>
+                                <th>名称</th>
+                                <th>值</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -60,7 +60,7 @@
         </tr>
         {{/each}}{{else}}
         <tr class=" empty text-center ">
-            <td colspan=" 3 "><span>No records found!</span></td>
+            <td colspan=" 3 "><span>没有找到记录！</span></td>
         </tr>{{/if}} {{/if}}
     </tbody>
 </table>

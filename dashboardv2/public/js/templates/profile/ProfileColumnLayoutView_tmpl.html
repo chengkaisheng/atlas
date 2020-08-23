@@ -17,19 +17,19 @@
 <div class="row">
     <div class="">
         <div class="col-sm-3 rowValue">
-            <div><span class="graphkey">Rows</span></div>
+            <div><span class="graphkey">行数</span></div>
             <div><span class="graphval">
                     <div class="value-loader"></div>
                 </span></div>
         </div>
         <div class="col-sm-3 table_created">
-            <div><span class="graphkey">Date Created</span></div>
+            <div><span class="graphkey">创建日期</span></div>
             <div><span class="graphval">
                     <div class="value-loader"></div>
                 </span></div>
         </div>
         <div class="col-sm-6 table_name">
-            <div><span class="graphkey">Table</span></div>
+            <div><span class="graphkey">表名</span></div>
             <div><span class="graphval">
                     <div class="value-loader"></div>
                 </span></div>
@@ -52,42 +52,42 @@
         <div class="col-sm-2 profileGraphDetail">
             {{#if profileData}}
             <div class="">
-                <div><span class="graphkey">Cardinality</span></div>
+                <div><span class="graphkey">基数</span></div>
                 <div title="{{profileData.cardinality}}"><span class="graphval text-right"><b>{{profileData.cardinality}}</b></span></div>
             </div>
             <hr />
             <div class="">
-                <div><span class="graphkey">% NonNull</span></div>
+                <div><span class="graphkey">% 非空</span></div>
                 <div title="{{profileData.nonNullData}}%"><span class="graphval text-right"><b>{{profileData.nonNullData}}%</b></span></div>
             </div>
             <hr /> {{#ifCond typeObject.type "==" "string"}}
             <div class="">
-                <div><span class="graphkey">Average Length</span></div>
+                <div><span class="graphkey">平均长度</span></div>
                 <div title="{{profileData.averageLength}}"><span class="graphval text-right"><b>{{profileData.averageLength}}</b></span></div>
             </div>
             <hr />
             <div class="">
-                <div><span class="graphkey">Max Length</span></div>
+                <div><span class="graphkey">最大长度</span></div>
                 <div title="{{profileData.maxLength}}"><span class="graphval text-right"><b>{{profileData.maxLength}}</b></span></div>
             </div>
             <hr /> {{/ifCond}} {{#ifCond typeObject.type "==" "numeric"}}
             <div class="">
-                <div><span class="graphkey">Min</span></div>
+                <div><span class="graphkey">最小值</span></div>
                 <div title="{{profileData.minValue}}"><span class="graphval text-right"><b>{{profileData.minValue}}</b></span></div>
             </div>
             <hr />
             <div class="">
-                <div><span class="graphkey">Max</span></div>
+                <div><span class="graphkey">最大值</span></div>
                 <div title="{{profileData.maxValue}}"><span class="graphval text-right"><b>{{profileData.maxValue}}</b></span></div>
             </div>
             <hr />
             <div class="">
-                <div><span class="graphkey">Mean</span></div>
+                <div><span class="graphkey">简介</span></div>
                 <div title="{{profileData.meanValue}}"><span class="graphval text-right"><b>{{profileData.meanValue}}</b></span></div>
             </div>
             <hr />
             <div class="">
-                <div><span class="graphkey">Median</span></div>
+                <div><span class="graphkey">中位数</span></div>
                 <div title="{{profileData.medianValue}}"><span class="graphval text-right"><b>{{profileData.medianValue}}</b></span></div>
             </div>
             {{/ifCond}} {{/if}}
