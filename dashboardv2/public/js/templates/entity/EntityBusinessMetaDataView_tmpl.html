@@ -17,7 +17,7 @@
 <div class="panel panel-default custom-panel expand_collapse_panel-icon">
     <div class="panel-heading main-parent collapsed" data-toggle="collapse" href="#businessMetadataCollapse" aria-expanded="false" style="width: 70%;">
         <h4 class="panel-title">
-            <a>Business Metadata</a>
+            <a>业务元数据</a>
         </h4>
         <div class="btn-group pull-left">
             <button type="button" title="Collapse"><i class="ec-icon fa"></i></button>
@@ -25,9 +25,9 @@
     </div>
     {{#ifCond readOnlyEntity "===" false}}
     <div class="panel-actions">
-        <button class="btn btn-action btn-sm" data-id="addBusinessMetadata">Add</button>
-        <button class="btn btn-action btn-sm" style="display: none;" data-id="saveBusinessMetadata">Save</button>
-        <button class="btn btn-action btn-sm" style="display: none;" data-id="cancel">Cancel</button>
+        <button class="btn btn-action btn-sm" data-id="addBusinessMetadata">添加</button>
+        <button class="btn btn-action btn-sm" style="display: none;" data-id="saveBusinessMetadata">保存</button>
+        <button class="btn btn-action btn-sm" style="display: none;" data-id="cancel">取消</button>
     </div>
     {{/ifCond}}
     <div id="businessMetadataCollapse" class="panel-collapse collapse">
@@ -35,7 +35,7 @@
             <div data-id="businessMetadataTree"></div>
             <div class="editBox" style="display: none;">
                 <div class="form-group">
-                    <a href="javascript:void(0)" class="btn btn-action btn-sm" data-id="addItem" data-type="addAttrButton">Add New Attribute</a>
+                    <a href="javascript:void(0)" class="btn btn-action btn-sm" data-id="addItem" data-type="addAttrButton">添加新属性</a>
                 </div>
                 <ul class="business-metadata-tree-parent" data-id="itemView"></ul>
             </div>

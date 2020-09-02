@@ -29,7 +29,7 @@
                     <table class="table table-hover backgrid table-quickMenu">
                         <tbody>
                             <tr class="empty">
-                                <td colspan="16"><span>No Records found!</span></td>
+                                <td colspan="16"><span>未找到记录!</span></td>
                             </tr>
                         </tbody>
                     </table>
@@ -41,7 +41,7 @@
                 <div class="col-sm-12 inline-content-fr no-padding-left">
                     <div class="inline" data-id="colManager"></div>
                     <div class="inline">
-                        <a href="javascript:void(0)" class="multiSelectTag assignTag btn btn-action btn-sm" style="display:none" title="Assign Classification" data-id="addAssignTag"><i class="fa fa-plus"></i>&nbsp;Classification</a>
+                        <a href="javascript:void(0)" class="multiSelectTag assignTag btn btn-action btn-sm" style="display:none" title="Assign Classification" data-id="addAssignTag"><i class="fa fa-plus"></i>&nbsp;分类</a>
                     </div>
                     {{#unless isGlossaryView}}
                     <div class="inline">
@@ -51,18 +51,18 @@
                     <div class="inline" data-id="containerCheckBox" style="display: none;">
                         <label class="checkbox-inline btn" for="historicalentities">
                             <input type="checkbox" data-id="checkDeletedEntity" data-value="includeDE" id="historicalentities" />
-                            <b>Show historical entities</b></label>
+                            <b>显示水平entities</b></label>
                     </div>
                     <div class="inline" data-id="containerCheckBox" style="display: none;">
                         <label class="checkbox-inline btn" for="subclassifications">
                             <input type="checkbox" data-id="checkSubClassification" data-value="excludeSC" id="subclassifications" />
-                            <b>Exclude sub-classifications</b></label>
+                            <b>排除子分类</b></label>
                     </div>
                     {{#ifCond fromView '!==' "classification"}}
                     <div class="inline" data-id="containerCheckBox" style="display: none;">
                         <label class="checkbox-inline btn" for="subtypes">
                             <input type="checkbox" data-id="checkSubType" data-value="excludeST" id="subtypes" />
-                            <b>Exclude sub-types</b></label>
+                            <b>排除子类别</b></label>
                     </div>
                     {{/ifCond}}
                 </div>
@@ -71,8 +71,8 @@
                 {{#if isSearchTab}}<h1><b>{{searchType}}</b></h1>{{/if}}
                 {{#if entityCreate}}
                 <div class="entityLink" style="display:none">
-                    <p class="entityLink">Search Atlas for existing entities or
-                        <a href="javascript:void(0)" data-id='createEntity'> create new entity </a>
+                    <p class="entityLink">在Atlas查找已经存在的entities或者
+                        <a href="javascript:void(0)" data-id='createEntity'> 创建新的entity </a>
                     </p>
                 </div>
                 {{/if}}
@@ -102,17 +102,17 @@
                         </div>
                         <div class="inline col-sm-4" data-id="paginationDiv">
                             <div class="input-group" data-id="goToPageDiv">
-                                <input type="text" class="form-control number-input" data-id="gotoPage" placeholder="Goto Page" />
+                                <input type="text" class="form-control number-input" data-id="gotoPage" placeholder="跳转到页面" />
                                 <span class="input-group-btn">
                                     <button class="btn btn-default" type="button" data-id="gotoPagebtn" title="Goto Page" disabled="disabled">
-                                        Go!
+                                        走你!
                                     </button>
                                 </span>
                             </div>
                         </div>
                         <div class="inline">
                             <div class="inline-content">
-                                <span class="control-label-sm inline ">Page Limit :</span>
+                                <span class="control-label-sm inline ">页面限制 :</span>
                                 <div class="inline" style="width: 80px;">
                                     <select data-id="showPage" multiple="multiple" class="form-control"> </select>
                                 </div>
@@ -125,5 +125,5 @@
     </div>
 </div>
 <div class="text-center" data-id="columnEmptyInfo" style="display: none;">
-    <h4>Please select one/more column to see the data</h4>
+    <h4>请选择一/多列来搜索数据</h4>
 </div>

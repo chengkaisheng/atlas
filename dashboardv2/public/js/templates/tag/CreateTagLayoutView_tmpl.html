@@ -19,7 +19,7 @@
 </div>
 <form name="tagDefinitionform" class="hide form-horizontal" data-id="createTagForm">
     <div class="form-group">
-        <label class="control-label col-sm-2 {{#if create}}required{{/if}}" for="name">Name</label>
+        <label class="control-label col-sm-2 {{#if create}}required{{/if}}" for="name">名称</label>
         {{#if create}}
         <div class="col-sm-10">
             <input class="form-control" data-id="tagName" placeholder="Name(required)" autofocus />
@@ -28,23 +28,23 @@
         <span class="ellipsis-with-margin control-label text-left col-sm-10" data-id="title"></span> {{/if}}
     </div>
     <div class="form-group">
-        <label class="control-label col-sm-2" for="description">Description</label>
+        <label class="control-label col-sm-2" for="description">描述</label>
         <div class="col-sm-10">
-            <input class="form-control" data-id="description" value="{{description}}" placeholder="Description" />
+            <input class="form-control" data-id="description" value="{{description}}" placeholder="描述" />
         </div>
     </div>
     {{#if create}}
     <div class="form-group">
         <div class="col-sm-12">
-            <label>Select classification to inherit attributes(optional)</label>
-            <p class="text-gray">Attributes define additional properties for the classification</p>
+            <label>选择分类以继承属性(可选)</label>
+            <p class="text-gray">属性为分类定义了额外的特性</p>
             <select class="form-control" data-id="parentTagList" multiple="multiple"></select>
         </div>
     </div>
     <div class="form-group">
-        <label class="col-sm-12">Attributes(optional)</label>
+        <label class="col-sm-12">属性(可选)</label>
         <div class="col-sm-12">
-            <button title="Add New Attribute" type="button" class="btn btn-action btn-sm" data-id="attributeData"><i class="fa fa-plus"></i> Add New Attributes</button>
+            <button title="Add New Attribute" type="button" class="btn btn-action btn-sm" data-id="attributeData"><i class="fa fa-plus"></i> 添加新属性</button>
         </div>
     </div>
     {{/if}}

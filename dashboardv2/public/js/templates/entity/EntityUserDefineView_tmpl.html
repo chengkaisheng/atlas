@@ -19,7 +19,7 @@
         {{#ifCond customAttibutes.length "===" 0}}
         <div class="panel-heading collapsed" data-toggle="collapse" href={{divId_1.anchor}} {{#ifCond swapItem "===" true}} aria-expanded="true" {{else}} aria-expanded="false" {{/ifCond}} style="width: 70%">
             <h4 class="panel-title">
-                <a>User-defined properties </a>
+                <a>用户自定义属性 </a>
             </h4>
             <div class="btn-group pull-left">
                 <button type="button" title="Collapse"><i class="ec-icon fa"></i></button>
@@ -28,7 +28,7 @@
         {{else}}
         <div class="panel-heading" data-toggle="collapse" href={{divId_2.anchor}} aria-expanded="true" style="width: 70%">
             <h4 class="panel-title">
-                <a>User-defined properties </a>
+                <a>用户自定义属性 </a>
             </h4>
             <div class="btn-group pull-left">
                 <button type="button" title="Collapse"><i class="ec-icon fa"></i></button>
@@ -39,12 +39,12 @@
         <div class="panel-actions">
             {{#ifCond swapItem "!==" true}}
             <button class="btn btn-action btn-sm" data-id="addAttr">
-                {{#ifCond customAttibutes.length "===" 0}} Add {{else}} Edit {{/ifCond}}
+                {{#ifCond customAttibutes.length "===" 0}} 添加 {{else}} 编辑 {{/ifCond}}
             </button>
             {{/ifCond}}
             {{#ifCond saveAttrItems "===" true}}
-            <button class="btn btn-action btn-sm" data-id="saveAttrItems">Save</button>
-            <button class="btn btn-action btn-sm" data-id="cancel">Cancel</button>
+            <button class="btn btn-action btn-sm" data-id="saveAttrItems">保存</button>
+            <button class="btn btn-action btn-sm" data-id="cancel">取消</button>
             {{/ifCond}}
         </div>
         {{/ifCond}}
@@ -57,7 +57,7 @@
                         <div id="r_entityUserDefinedItemView"></div>
                         {{else}}
                         {{#ifCond readOnlyEntity "===" false}}
-                        No properties have been created yet. To add a property, click <a href="javascript:void(0)" data-id="addItem">here</a>
+                        还未添加属性。点击 <a href="javascript:void(0)" data-id="addItem">添加属性</a>
                         {{/ifCond}}
                     </div>
                     {{/ifCond}}
